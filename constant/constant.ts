@@ -1,12 +1,12 @@
 export const NavLinks = [
   {
     id: 1,
-    url: "/",
+    url: "/#hero",
     label: "Home",
   },
   {
     id: 2,
-    url: "components/Home/Services/Services.tsx",
+    url: "/#services",
     label: "Services",
   },
   {
@@ -21,17 +21,17 @@ export const NavLinks = [
   },
   {
     id: 5,
-    url: "/",
+    url: "/#skills",
     label: "Skills",
   },
   {
     id: 6,
-    url: "/",
+    url: "/#clientReview",
     label: "Testimonials",
   },
   {
     id: 7,
-    url: "/",
+    url: "/#contact",
     label: "Contact",
   },
 ];

@@ -44,6 +44,7 @@ const skills = [
   },
 ];
 
+
 const Skills = () => {
   return (
     <div className="text-white pt-16 pb-16 ">

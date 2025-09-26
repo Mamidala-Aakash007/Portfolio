@@ -2,31 +2,41 @@
 
 import { NavLinks } from "@/constant/constant";
 import Link from "next/link";
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
-  openNav: ()=> void,
-}
+  openNav: () => void;
+};
 
-export default function Navbar({openNav}: Props) {
-  const [navBg, setNavBg]=useState(false);
+export default function Navbar({ openNav }: Props) {
 
-  useEffect(() =>{
-    const handler= ()=> {
-      if(window.scrollY >=90) setNavBg(true)
-        if(window.scrollY < 90) setNavBg(false)
+  const handleNavClick = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      if (window.scrollY >= 90) setNavBg(true);
+      if (window.scrollY < 90) setNavBg(false);
     };
 
-    window.addEventListener('scroll',handler)
+    window.addEventListener("scroll", handler);
 
-    return() => window.removeEventListener('scroll', handler)
-  },[])
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
-    return (
-    <div className={`transition-all ${navBg ? 'bg-[#0f142ed9] shadow-md' :'fixed' }duration-200 h-[12vh] z-[10000] fixed w-full`}>
+  return (
+    <div
+      className={` select-none transition-all ${
+        navBg ? "bg-[#0f142ed9] shadow-md" : "fixed"
+      }duration-200 h-[12vh] z-[10000] fixed w-full`}
+    >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
@@ -41,13 +51,13 @@ export default function Navbar({openNav}: Props) {
         <div className="hidden lg:flex items-center space-x-10">
           {NavLinks.map((link) => {
             return (
-              <Link
+              <span
                 key={link.id}
-                href={link.url}
-                className="text-base hover:text-cyan-300 text-white font-medium transition-all duration-200"
+                onClick={() => handleNavClick(link.url.replace("/#", ""))}
+                className="text-lg select-none hover:text-cyan-300 text-white font-medium transition-all duration-200 cursor-pointer"
               >
                 {link.label}
-              </Link>
+              </span>
             );
           })}
         </div>
@@ -59,7 +69,10 @@ export default function Navbar({openNav}: Props) {
             <span>Download CV</span>
           </button>
           {/* burger menu */}
-          <HiMiniBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white lg:hidden" />
+          <HiMiniBars3BottomRight
+            onClick={openNav}
+            className="w-8 h-8 cursor-pointer text-white lg:hidden"
+          />
         </div>
       </div>
     </div>
