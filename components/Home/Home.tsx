@@ -36,18 +36,14 @@ const Home = () => {
       <section id="resume">
         <Resume />
       </section>
-      <section>
         <Projects />
-      </section>
       <section id="skills">
         <Skills />
       </section>
       <section id="clientReview">
         <ClientReview />
-      </section>
-      <section>
+      </section> 
         <Blog />
-      </section>
       <section id="contact">
         <Contact />
       </section>

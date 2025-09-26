@@ -22,7 +22,7 @@ export default function MobileNav({showNav,closeNav}:Props) {
           return (
             <Link key={link.id} href={link.url}>
               <p className="text-wgite w-fit text-xl ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]">
-                {link.Label}
+                {link.label}
               </p>
             </Link>
           );
