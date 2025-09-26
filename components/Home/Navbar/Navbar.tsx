@@ -38,7 +38,7 @@ export default function Navbar({openNav}: Props) {
           </h1>
         </div>
         {/* navlinks */}
-        <div className="hidden lg:flex items:-center space-x-10">
+        <div className="hidden lg:flex items-center space-x-10">
           {NavLinks.map((link) => {
             return (
               <Link
@@ -46,7 +46,7 @@ export default function Navbar({openNav}: Props) {
                 href={link.url}
                 className="text-base hover:text-cyan-300 text-white font-medium transition-all duration-200"
               >
-                <p>{link.Label}</p>
+                {link.label}
               </Link>
             );
           })}

@@ -2,36 +2,36 @@ export const NavLinks = [
   {
     id: 1,
     url: "/",
-    Label: "Home",
+    label: "Home",
   },
   {
     id: 2,
-    url: "/",
-    Label: "Services",
+    url: "components/Home/Services/Services.tsx",
+    label: "Services",
   },
   {
     id: 3,
     url: "/",
-    Label: "Resume",
+    label: "Resume",
   },
   {
     id: 4,
     url: "/",
-    Label: "Works",
+    label: "Works",
   },
   {
     id: 5,
     url: "/",
-    Label: "Skills",
+    label: "Skills",
   },
   {
     id: 6,
     url: "/",
-    Label: "Testimonials",
+    label: "Testimonials",
   },
   {
     id: 7,
     url: "/",
-    Label: "Contact",
+    label: "Contact",
   },
 ];

@@ -10,15 +10,20 @@ const Services = () => {
         impactful results
       </h1>
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-col-1 md: grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center">
-          {Service.map((service) => {
-                return (
-                    <ServiceCard 
-                    key={service.id}
-                    icon={service.icon}
-                    name={service.name}
-                    description= {service.description}/>
-                )
-          })}
+        {Service.map((service, index) => (
+          <div
+            key={service.id}
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay={index * 100}
+          >
+            <ServiceCard
+              icon={service.icon}
+              name={service.name}
+              description={service.description}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
