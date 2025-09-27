@@ -3,7 +3,7 @@ import { Service } from "@/constant/ServicesConstants";
 import { ServiceCard } from "./ServiceCard";
 
 
-const Services = () => {
+export default function Services () {
   return (
     <div className="pt-16 pb-16">
       <h1 className="flex items-center justify-center text-white text-center text-2xl md:text-4xl  xl:text-5xl font-bold">
@@ -30,4 +30,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+

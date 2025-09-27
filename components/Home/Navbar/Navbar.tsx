@@ -1,7 +1,6 @@
 "use client";
 
 import { NavLinks } from "@/constant/constant";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
@@ -64,10 +63,10 @@ export default function Navbar({ openNav }: Props) {
         {/* buttons */}
         <div className="flex items-center space-x-4">
           {/* CV button */}
-          <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2">
+          <a href="pdfs/MamidalaAakash_Developer_Resume.pdf" download="Aakash_Mamidala_CV.pdf" className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2">
             <BiDownload className="w-5 h-5" />
-            <span>Download CV</span>
-          </button>
+            <span className="inline">Download CV</span>
+          </a>
           {/* burger menu */}
           <HiMiniBars3BottomRight
             onClick={openNav}

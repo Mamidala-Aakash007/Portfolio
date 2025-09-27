@@ -6,7 +6,7 @@ type Props = {
   title: string;
 };
 
-const BlogCard = ({ image, title }: Props) => {
+export default function BlogCard ({ image, title }: Props) {
   return (
     <div>
       <Image
@@ -33,4 +33,4 @@ const BlogCard = ({ image, title }: Props) => {
   );
 };
 
-export default BlogCard;
+

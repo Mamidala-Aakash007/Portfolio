@@ -4,14 +4,14 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
-import { Resume } from "./Resume/Resume";
-import { Projects } from "./Projects/Projects";
+import Resume from "./Resume/Resume";
+import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import ClientReview from "./ClientReview/ClientReview";
-import Blog from "./Blog/Blog";
+// import ClientReview from "./ClientReview/ClientReview";
+// import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 
-const Home = () => {
+export default function Home() {
   useEffect(() => {
     const initAOS = async () => {
       await import("aos");
@@ -21,6 +21,7 @@ const Home = () => {
         once: true,
         anchorPlacement: "top-bottom",
       });
+      AOS.refresh();
     };
 
     initAOS();
@@ -39,7 +40,6 @@ const Home = () => {
       <section id="works">
         <Projects />
       </section>
-
       <section id="skills">
         <Skills />
       </section>
@@ -52,6 +52,4 @@ const Home = () => {
       </section>
     </div>
   );
-};
-
-export default Home;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import { ResumeCard } from "./ResumeCard";
-import { FaCodepen, FaReact } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { BiBadge } from "react-icons/bi";
 
-export const Resume = () => {
+export default function Resume  ()  {
   return (
     <div className="pt-20 pb-16">
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
