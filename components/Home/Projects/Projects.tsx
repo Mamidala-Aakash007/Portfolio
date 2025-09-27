@@ -12,7 +12,7 @@ export const Projects = () => {
         {/* first project */}
         <div data-aos="fade-up" data-aos-anchor-placement="top-center">
           <Image
-            src="/images/p1.jpg"
+            src="/images/Social_media_dashboard.png"
             alt="img"
             width={800}
             height={650}
@@ -48,7 +48,7 @@ export const Projects = () => {
           data-aos-delay="200"
         >
           <Image
-            src="/images/p3.jpg"
+            src="/images/MovieFinder.png"
             alt="img"
             width={800}
             height={650}
@@ -58,6 +58,24 @@ export const Projects = () => {
             Movie Finder
           </h1>
           <h1 className="pt-2 font-medium text-white/80">Apps, UI/UX</h1>
+        </div>
+        {/* fourth project */}
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+        >
+          <Image
+            src="/images/bookfinder.png"
+            alt="img"
+            width={800}
+            height={650}
+            className="rounded-lg cursor-pointer"
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Library
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80">Apps, UI/UX, Searching</h1>
         </div>
       </div>
     </div>

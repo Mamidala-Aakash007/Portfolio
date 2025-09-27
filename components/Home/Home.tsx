@@ -36,14 +36,17 @@ const Home = () => {
       <section id="resume">
         <Resume />
       </section>
+      <section id="works">
         <Projects />
+      </section>
+
       <section id="skills">
         <Skills />
       </section>
-      <section id="clientReview">
+      {/* <section id="clientReview">
         <ClientReview />
-      </section> 
-        <Blog />
+      </section>  */}
+      {/* <Blog /> */}
       <section id="contact">
         <Contact />
       </section>

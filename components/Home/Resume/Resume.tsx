@@ -4,7 +4,6 @@ import { FaCodepen, FaReact } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { BiBadge } from "react-icons/bi";
 
-
 export const Resume = () => {
   return (
     <div className="pt-20 pb-16">
@@ -19,21 +18,23 @@ export const Resume = () => {
             data-aos-anchor-placement="top-center"
             className="mt-10"
           >
-            <ResumeCard
+            {/* <ResumeCard
               Icon={FaCodepen}
               role="Full-Stack Developer"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-            />
+            /> */}
             <ResumeCard
               Icon={FaReact}
               role="Front-End Developer"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              description="Frontend Developer passionate about creating responsive, user-friendly web applications using modern technologies 
+like React.js, TypeScript, and CSS frameworks. Eager to apply strong UI/UX skills and coding expertise to deliver 
+impactful solutions during an internship opportunity."
             />
-            <ResumeCard
+            {/* <ResumeCard
               Icon={BsDatabase}
               role="Back-End Developer"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-            />
+            /> */}
           </div>
         </div>
         {/* education part */}
@@ -51,19 +52,19 @@ export const Resume = () => {
               Icon={BiBadge}
               role="Sree Chaitanya College of Engineering"
               date="August 2021 - August 2025"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              description="Completed my B.Tech in CSE with a CGPA of 7.52, gaining hands-on experience in software development, data structures, and web technologies."
             />
             <ResumeCard
               Icon={FaReact}
               role="Bachelor in Computer Science and Engineering"
               date="August 2021 - August 2025"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              description=""
             />
             <ResumeCard
               Icon={BsDatabase}
               role="Certificate in Front-End Developer"
               date="Feb 2023 - April 2023"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+              description="Completed Meta Front-End Developer Professional Certificate, gaining hands-on experience with HTML, CSS, JavaScript, and React.js to build responsive web applications.`"
             />
           </div>
         </div>
