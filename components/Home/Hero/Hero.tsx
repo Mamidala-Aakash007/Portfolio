@@ -18,7 +18,7 @@ export default function Her() {
       <div className="relative z-10 flex flex-col items-center">
         <div className="w-[150px] h-[150px] rounded-full overflow-hidden border-8 border-[#0c0c48aa]">
           <Image
-            src="/images/Ai.png"
+            src="/images/aak2.jpg"
             alt="heroimage"
             width={150}
             height={150}
