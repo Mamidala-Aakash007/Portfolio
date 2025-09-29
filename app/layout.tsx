@@ -11,8 +11,11 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Aakash Portfolio | nextjs 15",
-  description: "Portfolio bulit by Aakash using nextjs 15",
+  title: "Mamidala Aakash | Web Developer & Programmer Portfolio",
+  description: "Explore the portfolio of Mamidala Aakash, a web developer skilled in HTML, CSS, JavaScript, React, and modern frontend technologies. Passionate about building clean, responsive, and user-friendly web applications.",
+  icons: {
+    icon: "/coding.png",
+  } 
 };
 
 export default function RootLayout({
