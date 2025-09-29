@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Mamidala Aakash | Web Developer & Programmer Portfolio",
   description: "Explore the portfolio of Mamidala Aakash, a web developer skilled in HTML, CSS, JavaScript, React, and modern frontend technologies. Passionate about building clean, responsive, and user-friendly web applications.",
   icons: {
-    icon: "/coding.png",
+    icon: "/favicon.png",
   } 
 };
 
